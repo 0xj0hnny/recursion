@@ -23,7 +23,7 @@ var stringifyJSON = function(obj) {
 		case 'string':
 			return '"' + obj + '"';
 			break;
-			
+
 		case 'object':
 			if(_.isArray(obj)){
 				if(obj.length === 0){
@@ -53,11 +53,11 @@ var stringifyJSON = function(obj) {
 					return '{' + result.join(',') + '}';
 				}
 			}
-		break;
+			break;
 
-	default: 
-		return obj;
-		break;
+		default: 
+			return obj;
+			break;
 	}
 
 };
