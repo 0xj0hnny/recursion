@@ -4,16 +4,6 @@
 // };
 
 // But instead we're going to implement it from scratch:
-
-//function walkTheDOM(node, func) {
-//    func(node);
-//    node = node.firstChild;
-//    while (node) {
-//        walkTheDOM(node, func);
-//        node = node.nextSibling;
-//    }
-//}
-
 var getElementsByClassName = function(className){
   var result = []; 
   //check if document.body contains elemet with className
